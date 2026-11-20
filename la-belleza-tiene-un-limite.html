@@ -219,7 +219,7 @@
   .buy h2{ font-family:var(--display); font-weight:700; text-transform:uppercase; color:var(--bone);
     font-size:clamp(2.2rem,6.5vw,4rem); line-height:.98; letter-spacing:.01em; margin:.15em 0 .35em; }
   .buy-sub{ color:var(--mute); max-width:54ch; margin:0 auto 3em; font-weight:300; }
-  .buy-grid{ display:grid; grid-template-columns:1fr 1.35fr 1fr; gap:18px; text-align:left; align-items:start; }
+  .buy-grid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; text-align:left; align-items:start; }
   @media(max-width:1000px){ .buy-grid{ grid-template-columns:1fr; } }
   .buy-card{ border:1px solid var(--edge); background:linear-gradient(180deg,var(--panel),var(--night-2));
     padding:clamp(24px,3.4vw,38px); position:relative; }
@@ -462,7 +462,7 @@
     <div class="reveal buy-inner">
       <span class="mono sec-eyebrow" style="color:var(--blood)">Consíguela</span>
       <h2>Elige cómo entrar en la historia</h2>
-      <p class="buy-sub">Compra online en Amazon, pregunta por ella en Librería Vistahermosa o reserva por WhatsApp si no quieres quedarte sin ejemplar dedicado en la próxima tanda.</p>
+      <p class="buy-sub">Compra online en Amazon o encuentra la novela en Librería Vistahermosa, Librería Zorba y Papelería Bollullo, en El Puerto de Santa María. También puedes reservar por WhatsApp un ejemplar dedicado para la próxima tanda de Librería Vistahermosa.</p>
 
       <div class="buy-grid">
         <!-- Amazon -->
@@ -520,7 +520,9 @@
           <p class="mono" style="margin-top:1.1em;font-size:.64rem;letter-spacing:.1em;color:var(--mute);text-transform:none">C. de Enmedio, 3 · El Puerto de Santa María</p>
         </div>
 
-        <!-- Donación directa a AEGEFYS -->
+        <div class="buy-card"><span class="bc-tag">En El Puerto de Santa María</span><h3>Librería Zorba</h3><p>Las dos novelas están disponibles en esta librería independiente.</p><p>Calle Virgen de los Milagros, 84, conocida como calle Larga.<br>El Puerto de Santa María.</p><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Librer%C3%ADa%20Zorba%20Calle%20Virgen%20de%20los%20Milagros%2084%20El%20Puerto%20de%20Santa%20Mar%C3%ADa" target="_blank" rel="noopener">Cómo llegar</a></div>
+<div class="buy-card"><span class="bc-tag">En El Puerto de Santa María</span><h3>Papelería Bollullo</h3><p>También encontrarás aquí <i>La belleza tiene un límite</i> y <i>El dilema del voyeur</i>.</p><p>Calle Virgen de los Milagros, 10.<br>11500 El Puerto de Santa María.</p><p><a href="tel:+34956859742" style="text-decoration:underline">956 85 97 42</a></p><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Papeler%C3%ADa%20Bollullo%20Calle%20Virgen%20de%20los%20Milagros%2010%20El%20Puerto%20de%20Santa%20Mar%C3%ADa" target="_blank" rel="noopener">Cómo llegar</a></div>
+<!-- Donación directa a AEGEFYS -->
         <div class="buy-card">
           <span class="bc-tag">Donación independiente</span>
           <h3>Apoya a AEGEFYS</h3>
